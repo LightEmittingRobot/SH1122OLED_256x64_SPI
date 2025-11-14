@@ -1,4 +1,4 @@
-# sh1122.py - stable reverted driver
+# sh1122.py - stable-ish driver
 
 from machine import Pin, SPI
 import time
@@ -10,7 +10,7 @@ class SH1122:
     def __init__(self, spi, dc, cs, rst,
                  col_offset=0,
                  row_offset=0,
-                 a0_cmd=0x14):   # YOUR WORKING VALUE
+                 a0_cmd=0x14): 
 
         self.spi = spi
         self.dc  = dc
